@@ -64,9 +64,6 @@
 	<!-- Development Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Cantata+One%7COpen+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 	<!-- Development Google Fonts -->
-	<script>
-	$( "#menu_swapper" ).load( "pizza_menu.html" );
-	</script>
 
 
   </head>
@@ -317,8 +314,7 @@
 								  <span class="pm-caption-decription">
 									Quality Restaurant and Pizzeria
 								  </span>
-								  <a href="#" class="pm-slide-btn animated">View our menus <i class="fa fa-chevron-right"></i>
-								  </a>
+
 							</div>
 						</div>
 
@@ -346,7 +342,7 @@
 						<div class="pm-isotope-filter-container">
 							<ul class="pm-isotope-filter-system">
 								<li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
-								<li><a href="#">Pizza</a></li>
+								<li><a id="pizza_selector" href="#">Pizza</a></li>
 								<li><a href="#">Italian Meals</a></li>
 								<li><a href="#">Salads</a></li>
 								<li><a href="#">Submarines</a></li>
@@ -363,11 +359,11 @@
 
 				</div><!-- /.col-lg-12 -->
 
-				<div id="menu_swapper">
+				<div id="menu_swapper"><!-- temp from charles -->
+
 
 				</div>
 
-				<!-- temp from charles -->
 
 
 				<!-- end of menu_swapper -->
@@ -394,8 +390,6 @@
 						</div>
 						<!-- Featured panel header end -->
 
-
-
 					</div>
 
 				</div><!-- /.col-lg-12 -->
@@ -414,11 +408,6 @@
 							<p class="pm-event-item-title">Live jazz band</p>
 							<div class="pm-event-item-divider"></div>
 							<p class="pm-event-item-excerpt">Nam pharetra diam eu dolor vestibulum volutpat. Aliquam non turpis non leo euismod sollicitudin. Pellentesque eget <a href="#">{...}</a> </p>
-							<div class="pm-event-item-divider"></div>
-							<ul class="pm-event-item-btns">
-								<li><a href="#" class="pm-rounded-btn small pm-primary">more info</a></li>
-								<li><a href="#" class="pm-rounded-btn small pm-secondary"><i class="fa fa-facebook"></i> &nbsp;fan page</a></li>
-							</ul>
 						</div>
 					</div>
 				</div><!-- /.col-lg-4 -->
@@ -438,11 +427,6 @@
 							<p class="pm-event-item-title">wine tasting</p>
 							<div class="pm-event-item-divider"></div>
 							<p class="pm-event-item-excerpt">Nam pharetra diam eu dolor vestibulum volutpat. Aliquam non turpis non leo euismod sollicitudin. Pellentesque eget <a href="#">{...}</a> </p>
-							<div class="pm-event-item-divider"></div>
-							<ul class="pm-event-item-btns">
-								<li><a href="#" class="pm-rounded-btn small pm-primary">more info</a></li>
-								<li><a href="#" class="pm-rounded-btn small pm-secondary"><i class="fa fa-facebook"></i> &nbsp;fan page</a></li>
-							</ul>
 						</div>
 					</div>
 				</div><!-- /.col-lg-4 -->
@@ -462,11 +446,6 @@
 							<p class="pm-event-item-title">heart &amp; stroke fundraiser</p>
 							<div class="pm-event-item-divider"></div>
 							<p class="pm-event-item-excerpt">Nam pharetra diam eu dolor vestibulum volutpat. Aliquam non turpis non leo euismod sollicitudin. Pellentesque eget <a href="#">{...}</a> </p>
-							<div class="pm-event-item-divider"></div>
-							<ul class="pm-event-item-btns">
-								<li><a href="#" class="pm-rounded-btn small pm-primary">more info</a></li>
-								<li><a href="#" class="pm-rounded-btn small pm-secondary"><i class="fa fa-facebook"></i> &nbsp;fan page</a></li>
-							</ul>
 						</div>
 					</div>
 				</div><!-- /.col-lg-4 -->
@@ -521,6 +500,7 @@
 	<!-- Bootstrap core JavaScript
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
+
 	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/jquery.viewport.mini.js"></script>
 	<script src="js/jquery.easing.1.3.js"></script>
