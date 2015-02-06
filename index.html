@@ -65,8 +65,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Cantata+One%7COpen+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 	<!-- Development Google Fonts -->
 
-	<script>
-	</script>
+	<!-- script section for header-->
+
 
   </head>
 
@@ -333,7 +333,7 @@
 		<!-- BODY CONTENT starts here -->
 
 		<!-- Menu filter system -->
-		<div class="container pm-containerPadding-top-50 pm-containerPadding-bottom-10">
+		<div id="menu_tag" class="container pm-containerPadding-top-50 pm-containerPadding-bottom-10">
 			<div class="row">
 
 				<div class="col-lg-12 pm-containerPadding-bottom-40">
@@ -344,15 +344,15 @@
 						<div class="pm-isotope-filter-container">
 							<ul class="pm-isotope-filter-system">
 								<li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
-								<li><a id="pizza_selector" href="#">Pizza</a></li>
-								<li><a href="#">Italian Meals</a></li>
-								<li><a href="#">Salads</a></li>
-								<li><a href="#">Submarines</a></li>
-								<li><a href="#">Appetizers</a></li>
-								<li><a href="#">Poutine</a></li>
-								<li><a href="#">Canadian Meals</a></li>
-								<li><a href="#">Donairs</a></li>
-								<li><a href="#">Shawarma</a></li>
+								<li><a id="pizza_selector" href="#menu_tag">Pizza</a></li>
+								<li><a id="italian_selector" href="#menu_tag">Italian Meals</a></li>
+								<li><a id="salad_selector" href="#menu_tag">Salads</a></li>
+								<li><a id="sub_selector" href="#menu_tag">Submarines</a></li>
+								<li><a id="appetizer_selector" href="#menu_tag">Appetizers</a></li>
+								<li><a id="poutine_selector" href="#menu_tag">Poutine</a></li>
+								<li><a id="canadian_selector" href="#menu_tag">Canadian Meals</a></li>
+								<li><a id="donair_selector" href="#menu_tag">Donairs</a></li>
+								<li><a id="shawarma_selector" href="#menu_tag">Shawarma</a></li>
 							</ul>
 						</div>
 						<!-- Filter menu end -->
@@ -362,7 +362,6 @@
 				</div><!-- /.col-lg-12 -->
 
 				<div id="menu_swapper"><!-- temp from charles -->
-
 
 				</div>
 
@@ -521,7 +520,13 @@
 	<script src="js/wow/wow.min.js"></script>
 	<script src="js/pulse/jquery.PMSlider.js"></script>
 
-
+	<script>
+		$(document).ready(function(){
+		    $("#pizza_selector").click(function(){
+		        $("#menu_swapper").load("menu/pizza.html");
+		    });
+		});
+	</script>
 
 
 	<p id="back-top" class="visible-lg visible-md visible-sm"> </p>
