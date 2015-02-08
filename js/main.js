@@ -193,9 +193,10 @@
 			   
 			   var $this = $(this),
 			   $parentUL = $this.parent('ul');
-			   
-			   
-			   
+			  
+			    $parentUL.css({
+					  "height" : 40 
+				    });
 			   //get the height of the total li elements
 			   $parentUL.children('li').each(function(index, element) {
 					totalHeight += $(this).height();
@@ -218,7 +219,7 @@
 					$parentUL.removeClass('expanded');
 				   				  
 				    $parentUL.css({
-					  "height" : 80 
+					  "height" : 40 
 				    });
 					
 					$this.find('i').removeClass('fa-close').addClass('fa-angle-down');

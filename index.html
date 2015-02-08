@@ -89,7 +89,6 @@
 
 	<ul class="sf-menu pm-nav">
 
-		<li><a href="#">Home</a></li>
 		<li>
 			<a href="#">Menus</a>
 			<ul>
@@ -106,30 +105,12 @@
 			</ul>
 		</li>
 		<li>
-			<a href="#">Events</a>
+			<a href="#">Specials</a>
 			<ul>
-				<li><a href="#">Book an Event</a></li>
-				<li><a href="#">Browse Events</a></li>
-				<!--<li><a href="#">Social Events</a></li>-->
+				
 			</ul>
 		</li>
-		<li>
-			<a href="#">News</a>
-			<ul>
-				<li><a href="#">News Full Width</a></li>
-				<li><a href="#">News with Sidebar</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="#">Store</a>
-			<ul>
-				<li><a href="#">Browse Store</a></li>
-				<li><a href="#">View Cart</a></li>
-				<!--<li><a href="#">Customer Login</a></li>-->
-			</ul>
-		</li>
-		<li><a href="#">Catering</a></li>
-
+		
 	</ul>
 
   </div><!-- /pm-mobile-nav-overlay -->
@@ -239,7 +220,6 @@
 
 							<ul class="sf-menu pm-nav">
 
-								<li><a href="#">Home</a></li>
 								<li>
 									<a href="#">Menus</a>
 									<ul>
@@ -255,30 +235,9 @@
 										<li><a href="#">Shawarma</a></li>
 									</ul>
 								</li>
-								<li><a href="#">Gallery</a></li>
 								<li>
-									<a href="#">Events</a>
-									<ul>
-										<li><a href="#">Book an Event</a></li>
-										<li><a href="#">Browse Events</a></li>
-										<!--<li><a href="#">Social Events</a></li>-->
-									</ul>
+									<a href="#">Specials</a>
 								</li>
-								<li>
-									<a href="#">News</a>
-									<ul>
-										<li><a href="#">News Full Width</a></li>
-										<li><a href="#">News with Sidebar</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">Store</a>
-									<ul>
-										<li><a href="#">Browse Store</a></li>
-										<li><a href="#">View Cart</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Catering</a></li>
 
 							</ul>
 
@@ -342,17 +301,17 @@
 
 						<!-- Filter menu -->
 						<div class="pm-isotope-filter-container">
-							<ul class="pm-isotope-filter-system">
+							<ul class="pm-isotope-filter-system menu_list">
 								<li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
-								<li><a id="pizza_selector" href="#menu_tag">Pizza</a></li>
-								<li><a id="italian_selector" href="#menu_tag">Italian Meals</a></li>
-								<li><a id="salad_selector" href="#menu_tag">Salads</a></li>
-								<li><a id="sub_selector" href="#menu_tag">Submarines</a></li>
-								<li><a id="appetizer_selector" href="#menu_tag">Appetizers</a></li>
-								<li><a id="poutine_selector" href="#menu_tag">Poutine</a></li>
-								<li><a id="canadian_selector" href="#menu_tag">Canadian Meals</a></li>
-								<li><a id="donair_selector" href="#menu_tag">Donairs</a></li>
-								<li><a id="shawarma_selector" href="#menu_tag">Shawarma</a></li>
+								<li class="pizza_selector"><a href="#menu_tag">Pizza</a></li>
+								<li class="italian_selector"><a href="#menu_tag">Italian Meals</a></li>
+								<li class="salad_selector"><a href="#menu_tag">Salads</a></li>
+								<li class="sub_selector"><a href="#menu_tag">Submarines</a></li>
+								<li class="appetizer_selector"><a href="#menu_tag">Appetizers</a></li>
+								<li class="poutine_selector"><a href="#menu_tag">Poutine</a></li>
+								<li class="canadian_selector"><a href="#menu_tag">Canadian Meals</a></li>
+								<li class="donair_selector"><a href="#menu_tag">Donairs</a></li>
+								<li class="shawarma_selector"><a href="#menu_tag">Shawarma</a></li>
 							</ul>
 						</div>
 						<!-- Filter menu end -->
@@ -377,7 +336,7 @@
 
 
 		<!-- Upcoming events filter system -->
-		<div class="container pm-containerPadding-top-50 pm-containerPadding-bottom-30">
+		<div id="specials_tag" class="container pm-containerPadding-top-50 pm-containerPadding-bottom-30">
 			<div class="row">
 
 				<div class="col-lg-12 pm-containerPadding-bottom-40">
@@ -387,7 +346,7 @@
 						<!-- Featured panel header -->
 						<div class="pm-featured-header-title-container events">
 							<p class="pm-featured-header-title">Current Specials</p>
-							<p class="pm-featured-header-message">Don't miss on the limited time offers!</p>
+							<p class="pm-featured-header-message">Call us or walk in for delicious specials!</p>
 						</div>
 						<!-- Featured panel header end -->
 
@@ -400,8 +359,8 @@
 					<div class="pm-event-item-container">
 						<div class="pm-event-item-img-container" style="background-image:url(img/events/item1.jpg);">
 							<div class="pm-event-item-date">
-								<p class="pm-event-item-month">JUL</p>
-								<p class="pm-event-item-day">28</p>
+								<p class="pm-event-item-month">Feb</p>
+								<p class="pm-event-item-day">13-27</p>
 							</div>
 						</div>
 
@@ -522,8 +481,9 @@
 
 	<script>
 		$(document).ready(function(){
-		    $("#pizza_selector").click(function(){
+		    $(".pizza_selector").click(function(){
 		        $("#menu_swapper").load("menu/pizza.html");
+		        $(".pizza_selector").css("text-decoration","underline");
 		    });
 		});
 	</script>

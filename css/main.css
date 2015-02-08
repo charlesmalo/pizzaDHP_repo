@@ -2075,7 +2075,7 @@ header.fixed .pm-header-logo {
 	margin:0;
 	display:table;
 	margin:0 auto;
-
+	height:40px;
 	transition:all 0.4s;
 	-moz-transition:all 0.4s;
 	-webkit-transition:all 0.4s;
