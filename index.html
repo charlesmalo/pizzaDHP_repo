@@ -93,24 +93,24 @@
 			<a href="#">Menus</a>
 			<ul>
 				<li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
-					<li><a href="#">Pizza</a></li>
-					<li><a href="#">Italian Meals</a></li>
-					<li><a href="#">Salads</a></li>
-					<li><a href="#">Submarines</a></li>
-					<li><a href="#">Appetizers</a></li>
-					<li><a href="#">Poutine</a></li>
-					<li><a href="#">Canadian Meals</a></li>
-					<li><a href="#">Donairs</a></li>
-					<li><a href="#">Shawarma</a></li>
+					<li class="pizza_selector"><a href="#menu_tag">Pizza</a></li>
+                    <li class="italian_selector"><a href="#menu_tag">Italian Meals</a></li>
+                    <li class="salad_selector"><a href="#menu_tag">Salads</a></li>
+                    <li class="sub_selector"><a href="#menu_tag">Submarines</a></li>
+                    <li class="appetizer_selector"><a href="#menu_tag">Appetizers</a></li>
+                    <li class="poutine_selector"><a href="#menu_tag">Poutine</a></li>
+                    <li class="canadian_selector"><a href="#menu_tag">Canadian Meals</a></li>
+                    <li class="donair_selector"><a href="#menu_tag">Donairs</a></li>
+                    <li class="shawarma_selector"><a href="#menu_tag">Shawarma</a></li>
 			</ul>
 		</li>
 		<li>
-			<a href="#">Specials</a>
+			<a href="#specials_tag">Specials</a>
 			<ul>
-				
+
 			</ul>
 		</li>
-		
+
 	</ul>
 
   </div><!-- /pm-mobile-nav-overlay -->
@@ -224,19 +224,19 @@
 									<a href="#">Menus</a>
 									<ul>
 										<li class="pm-isotope-filter-system-expand">Expand <i class="fa fa-angle-down"></i></li>
-										<li><a href="#">Pizza</a></li>
-										<li><a href="#">Italian Meals</a></li>
-										<li><a href="#">Salads</a></li>
-										<li><a href="#">Submarines</a></li>
-										<li><a href="#">Appetizers</a></li>
-										<li><a href="#">Poutine</a></li>
-										<li><a href="#">Canadian Meals</a></li>
-										<li><a href="#">Donairs</a></li>
-										<li><a href="#">Shawarma</a></li>
+										<li class="pizza_selector"><a href="#menu_tag">Pizza</a></li>
+                                        <li class="italian_selector"><a href="#menu_tag">Italian Meals</a></li>
+                                        <li class="salad_selector"><a href="#menu_tag">Salads</a></li>
+                                        <li class="sub_selector"><a href="#menu_tag">Submarines</a></li>
+                                        <li class="appetizer_selector"><a href="#menu_tag">Appetizers</a></li>
+                                        <li class="poutine_selector"><a href="#menu_tag">Poutine</a></li>
+                                        <li class="canadian_selector"><a href="#menu_tag">Canadian Meals</a></li>
+                                        <li class="donair_selector"><a href="#menu_tag">Donairs</a></li>
+                                        <li class="shawarma_selector"><a href="#menu_tag">Shawarma</a></li>
 									</ul>
 								</li>
 								<li>
-									<a href="#">Specials</a>
+									<a href="#specials_tag">Specials</a>
 								</li>
 
 							</ul>
@@ -321,7 +321,7 @@
 				</div><!-- /.col-lg-12 -->
 
 				<div class="menu_swapper"><!-- temp from charles -->
-					
+
 
 
 
@@ -487,7 +487,8 @@
 	<script>
 		$(document).ready(function(){
 		    $(".pizza_selector").click(function(){
-		        $(".menu_swapper").load("html/en/pizza.html");
+		       /* $(".menu_swapper").load("html/en/pizza.html");*/
+               $(".menu_swapper").load("html/en/pizza.html");
 		        $(".pizza_selector").css("text-decoration","underline");
 		    });
 		});
