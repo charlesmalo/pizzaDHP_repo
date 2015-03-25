@@ -112,6 +112,7 @@ a {
 
 a:hover {
 	color:#333;
+	cursor:pointer;
 }
 
 p {
@@ -3526,6 +3527,8 @@ header.fixed .pm-header-logo {
 	bottom:0;
 	margin:10px;
 }
+
+
 
 
 /* Gallery Post Layout end */
